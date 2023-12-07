@@ -1,0 +1,290 @@
+
+  @import url('https://fonts.googleapis.com/css2?family=Hedvig+Letters+Serif:opsz@12..24&display=swap');
+  @import url("https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css");
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    list-style-type: none;
+    text-decoration: none;
+overflow:none;
+
+}
+html{
+    scroll-behavior: smooth;
+}
+body{
+font-family: 'Hedvig Letters Serif', serif;
+width: 100%;
+}
+.header{
+    width: 100%;
+    height: 100vh;
+    background-image: url(../projecti/project.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+
+}
+.header::after{
+content: " ";
+width: 100%;
+height: 100vh;
+background-color: rgb(0,0,0,0.4);
+position: absolute;
+top: 0;
+left: 0;
+}
+nav{
+    padding: 0px 30px;
+display: flex;
+position: relative;
+z-index: 2;
+justify-content: space-between;
+align-items: center;
+width: 100%;
+height: 60px;
+background-color: rgba(0, 0, 0, 0.5);
+}
+.navbar ul{
+display: flex;
+width: 100%;
+gap: 80px;
+
+}
+nav .logo{
+    font-size: 30px;
+    color: wheat;
+    gap: 10px;
+    word-spacing: 10px;
+width: 100%;
+cursor: pointer;
+}
+.navbar ul li a{
+    font-size: 18px;
+width: 100%;
+color: ivory;
+ 
+}
+.navbar ul li a:hover{
+width: 100%;
+color:palegoldenrod;
+}
+#fafab{
+    color: rgb(255, 251, 251);
+width: 100%;
+font-size: 25px;
+    display: none;
+}
+.header-text{
+    position: absolute;
+    transform: translate(-50%,-50%);
+    color: wheat;
+    left: 50%;
+    top: 50%;
+    max-width: 400px;
+    width: 100%;
+    text-align: center;
+    z-index: 1;
+    gap: 10px;
+}
+
+.header-text h1{
+font-size: 50px;
+width: 100%;
+word-spacing: 10px;
+
+}
+.header-text p{
+font-size: 20px;
+line-height: 30px;
+margin: 30px 0px;
+width: 100%;
+word-spacing: 7px;
+
+}
+.header-text button{
+    outline: none;
+    border: none;
+    max-width: 200px;
+    height: 50px;
+    font-size: 15px;
+    border-radius: 30px;
+    background-color: wheat;
+    cursor: pointer;
+    width: 100%;
+}
+.header-text button:hover{
+    background-color: rgba(0, 0, 0, 0.5);
+    color: wheat;
+width: 100%;
+border: 2px solid rgb(216, 167, 77);
+}
+
+
+@media screen  and (max-width:768px){
+    #fafab{
+    display: block;
+}
+nav{
+    position: relative;
+}
+.navbar ul{
+    display: flex;
+    padding-top: 50px 0px;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: 60px;
+    left: -100%;
+    width: 100%;
+    height: calc(100vh - 60px);
+    background-color: rgba(0, 0, 0);
+    transition:0.3s;
+}
+.navbar ul li{
+    margin-top: 50px;
+}
+.navbar .click{
+    left: 0;
+}
+}
+
+
+
+
+/* our srviceeeee */
+.title{
+    font-size: 30px;
+    font-weight: 600;
+    background-color:bisque ;
+    width: 100%;
+    margin: 60px 0px ;
+    text-align: center;
+}
+.services-box{
+display: flex;
+justify-content: center;
+align-items: center;
+gap: 70px;
+flex-wrap: wrap;
+}
+.services-box-item{
+    width: 300px;
+    text-align: center;
+    gap: 60px ;
+} 
+.services-box-item img{
+width: 280px;
+height: 250px;
+gap: 60px;
+background-color: rgba(0, 0, 0, 0.5);
+border-radius: 50%;
+}
+.services-box-item img::after{
+    content: " ";
+    width: 100%;
+    height: 100vh;
+    background-color: rgb(0,0,0,0.4);
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+.services-box-item h1{
+font-size: 22px;
+margin: 15px 0px ;
+}
+.services-box-item p{
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 20px;
+}
+
+
+
+/* contactttt */
+
+
+
+.about{
+    text-align: center;
+    width: 100%;
+    max-width: 800px;
+    margin: 0 auto;
+}
+.about .about-img img{
+    width: 100%;
+    max-width: 800px;
+}
+.about .about-img img::after{
+    content: " ";
+    width: 100%;
+    height: 100vh;
+    background-color: rgb(0,0,0,0.4);
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+.about .about-des{
+    font-size: 14px;
+    margin: 30px 0;
+    line-height: 25px;
+}
+.contact{
+    width: 100%;
+    max-width: 800px;
+    margin: 0 auto;
+}
+.contact .about-des{
+    text-align: center;
+     font-size: 14px;
+    margin: 30px 0;
+    line-height: 25px;
+
+}
+
+form{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    max-width: 600px;
+    margin: 50px auto;
+    gap: 30px;
+}
+form input{
+    border: none;
+    outline: none;
+    font-size: 15px;
+    padding: 0px 10px;
+    height: 50px;
+    background-color: rgb(230, 225, 225);
+}
+form textarea{
+    border: none;
+    outline: none;
+    font-size: 15px;
+    padding: 10px 10px;
+    height: 50px;
+    background-color: rgb(230, 225, 225);
+}
+.form-btn{
+   height: 50px;
+   width: 600px;
+    border-radius: 50px;
+    color:rgb(0, 0, 0);
+    background-color: bisque;
+    }
+    .form-btn:hover{
+  
+        border-radius: 50px;
+        color:rgb(248, 241, 241);
+        background-color: rgb(82, 80, 79);
+        }
+.footer-text{
+    font-size: 15px;
+    background-color: rgb(243, 220, 187);
+    text-align: center;
+    color: black;
+    padding: 10px 0px;
+}
